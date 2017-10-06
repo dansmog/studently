@@ -21,7 +21,9 @@ router.put('/students/:id', (req, res, next) => {
 
 // Delete a student from the db
 router.delete('/students/:id', (req, res, next) => {
-    res.send({ type: "DELETE" });
+    Student.findByIdAndRemove({ _id: req.params.id }).then((student) => {
+        res.send(student);
+    })
 })
 
 module.exports = router;
