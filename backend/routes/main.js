@@ -8,7 +8,11 @@ router.get('/students', (req, res) => {
 
 // add a new student record to db
 router.post('/students', (req, res) => {
-    res.send({ type: "POST" });
+    res.send({
+        type: "POST",
+        name: req.body.name,
+        location: req.body.location
+    });
 })
 
 // update a particular student in the db
