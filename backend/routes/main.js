@@ -4,7 +4,9 @@ const Student = require('../models/student');
 
 //get the list of all the students from the db
 router.get('/students', (req, res, next) => {
-    res.send({ type: "GET" });
+    Student.find({}).then((students) => {
+        res.send(students);
+    })
 })
 
 // add a new student record to db
