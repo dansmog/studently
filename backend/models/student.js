@@ -17,7 +17,7 @@ const StudentSchema = new Schema({
         required: [true, 'Location field is required']
     },
     dob: {
-        type: Date,
+        type: String,
         required: [true, 'Date of Birth field is required']
     },
     hobby: {
@@ -28,12 +28,12 @@ const StudentSchema = new Schema({
         required: [true, 'About field is required']
     },
     phone: {
-        type: Number,
+        type: String,
         required: [true, 'Phone field is required']
     },
     email: {
         type: String,
-        required: [true, 'Email field is requied'];
+        required: [true, 'Email field is requied']
     },
     education_qualification: {
         type: String,
