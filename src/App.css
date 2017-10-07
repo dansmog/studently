@@ -1,43 +1,16 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-a {
+.app {
+    background: #f3f3f3;
+}
+
+a,
+a:hover {
     text-decoration: none;
-}
-
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-}
-
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-}
-
-.App-title {
-    font-size: 1.5em;
-}
-
-.App-intro {
-    font-size: large;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 ul {
@@ -45,7 +18,7 @@ ul {
     list-style: none;
 }
 
-.container {
+.d-container {
     width: 92%;
     margin: 0 auto;
 }
@@ -66,13 +39,24 @@ ul {
 
 header {
     box-shadow: 5px 10px 20px -20px rgba(0, 0, 0, .5);
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+.menu a {
+    color: #fff;
+    padding-right: 10px;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 .menu {
-    height: 50px;
     align-items: center;
-    padding: 0 10px;
     color: rgba(117, 117, 117, 1);
+    align-items: center;
+    align-content: center;
 }
 
 .menu li {
@@ -84,7 +68,7 @@ header {
 }
 
 .menu__bird a {
-    color: #1abc9c;
+    color: #fff;
     font-size: 1.3em;
 }
 
@@ -97,11 +81,61 @@ header {
 }
 
 .btn__add {
-    background-color: #1abc9c;
+    background-color: #fff;
     padding: 9px 15px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .btn__add a {
+    color: #8e44ad;
+}
+
+.card__btn {
+    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+.btn__main {
+    background: #8e44ad;
     color: #fff;
+    margin-right: 10px;
+}
+
+
+/** card details **/
+
+.card {
+    background-color: #fff;
+    box-shadow: 5px 10px 20px -20px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.card__photo-thumb {
+    width: 70px;
+    height: 70px;
+}
+
+.card__details h4 {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding-top: 10px;
+}
+
+.margin__top--sm {
+    margin-top: 40px;
+}
+
+.no-shadow {
+    box-shadow: 0;
+}
+
+.no-border {
+    border: none;
+}
+
+.panel {
+    box-shadow: 0;
 }
