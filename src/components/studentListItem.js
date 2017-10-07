@@ -3,7 +3,7 @@ import React,{ Component } from 'react';
 class StudentListItem extends Component {
     render(){
         return(
-            <div className="card col-xs-6 col-sm-3 col-md-3">
+            <div className="card col-xs-12 col-sm-3 col-md-3 margin__top-xs">
                 <div className="panel panel-default no-shadow no-border">
                     <div className="panel-body no-border no-shadow">
                         <div className="card__photo"></div>
