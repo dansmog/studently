@@ -1,28 +1,107 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.menu__bird {
+    margin-left: auto;
+    margin-right: auto/*this will push aside the other flex-items and the bird takes the remaining space!*/
+}
+
+
+/*
+  UI cleanups for the twitter navigation. This just makes things look good on the eye 😎
+*/
+
+header {
+    box-shadow: 5px 10px 20px -20px rgba(0, 0, 0, .5);
+}
+
+.menu {
+    height: 50px;
+    align-items: center;
+    padding: 0 10px;
+    color: rgba(117, 117, 117, 1);
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: rgba(85, 172, 238, 1);
+}
+
+.menu__bird a {
+    color: #1abc9c;
+    font-size: 1.3em;
+}
+
+.menu li:not(:last-child):not(.menu__bird) {
+    margin-right: 10px;
+}
+
+.menu li i:not(.fa-twitter):not(.fa-search):not(.fa-user-circle-o) {
+    margin-right: 3px;
+}
+
+.btn__add {
+    background-color: #1abc9c;
+    padding: 9px 15px;
+    border-radius: 3px;
+}
+
+.btn__add a {
+    color: #fff;
 }
