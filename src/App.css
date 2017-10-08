@@ -43,6 +43,10 @@ header {
     color: #fff;
 }
 
+.box-shadow {
+    box-shadow: 5px 10px 20px -20px rgba(0, 0, 0, .5);
+}
+
 .menu a {
     color: #fff;
     padding-right: 10px;

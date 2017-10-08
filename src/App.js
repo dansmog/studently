@@ -26,9 +26,26 @@ class App extends Component {
   renderStudents = () => {
     const {students, isLoading, requestFailed} = this.state;
     if(students.length === 0 && isLoading === true ){
-      return <h4>Loading....</h4>
+      return (
+        <div className="container">
+          <div className="col-xs-12 text-center box-shadow margin__top-sm">
+            <div style={{paddingTop: 100}}>
+             <h4>Loading....</h4>
+            </div>
+          </div>
+        </div>
+      )
     }else if(students.length === 0 ){
-      return <h4>No students add yet</h4>
+      return (
+        <div className="container">
+          <div className="col-xs-12 text-center box-shadow margin__top-sm">
+            <div style={{paddingTop: 100}}>
+              <i className="icons icon-drawer" style={{fontSize: 50, color: "#8e44ad"}}></i>
+              <h4>Student List is empty</h4>
+            </div>
+          </div>
+        </div>
+      )
     }else if(requestFailed){
       return <h4>{requestFailed}</h4>
     }else{
