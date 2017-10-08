@@ -28,7 +28,7 @@ class App extends Component {
     if(students.length === 0 && isLoading === true ){
       return (
         <div className="container">
-          <div className="col-xs-12 text-center box-shadow margin__top-sm">
+          <div className="col-xs-12 text-center margin__top-sm">
             <div style={{paddingTop: 100}}>
              <h4>Loading....</h4>
             </div>
@@ -38,12 +38,12 @@ class App extends Component {
     }else if(students.length === 0 ){
       return (
         <div className="container">
-          <div className="col-xs-12 text-center box-shadow margin__top-sm">
-            <div style={{paddingTop: 100}}>
+          <div className="col-xs-12 text-center margin__top-sm">
+            <div style={{paddingTop: 150}}>
               <i className="icons icon-drawer" style={{fontSize: 50, color: "#8e44ad"}}></i>
               <h4>Student List is empty</h4>
 
-              <div style={{marginTop: 50}}><a href="" className="btn__add"><i className="icons icon-plus"></i>New Student</a></div>
+              <div style={{marginTop: 50}}><a href="" className="btn__add btn__main"><i className="icons icon-plus"></i>New Student</a></div>
             </div>
           </div>
         </div>
