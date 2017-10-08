@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 
 class StudentListItem extends Component {
     render(){
+        let student = this.props.student
         return(
             <div className="card col-xs-12 col-sm-3 col-md-3 margin__top-xs">
                 <div className="panel panel-default no-shadow no-border">
@@ -9,7 +10,8 @@ class StudentListItem extends Component {
                         <div className="card__photo"></div>
                         <div className="card__details">
                             <img className="card__photo-thumb img-circle" src='https://avatars2.githubusercontent.com/u/2795724?v=4&s=460' alt="profile"/>
-                            <h4>Daniel Anthony Juwon</h4>
+                            <h4>{student.name}</h4>
+                            <p style={{fontSize: 11}}>{student.education_qualification}</p>
                         </div>
                         <div className="card__btn">
                             <button className="btn btn__main btn__style">view</button>
