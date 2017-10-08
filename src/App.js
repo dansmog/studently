@@ -42,6 +42,8 @@ class App extends Component {
             <div style={{paddingTop: 100}}>
               <i className="icons icon-drawer" style={{fontSize: 50, color: "#8e44ad"}}></i>
               <h4>Student List is empty</h4>
+
+              <div style={{marginTop: 50}}><a href="" className="btn__add"><i className="icons icon-plus"></i>New Student</a></div>
             </div>
           </div>
         </div>
